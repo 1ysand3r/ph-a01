@@ -1,86 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* border-style: none; */
+}
+
+h1 {
+		line-height: 1.8;
+}
+
+/* Nav field */
+
 nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 8px 8%;
 }
 
 nav ul {
 	display: flex;
 	list-style-type: none;
-	gap: 30px;
+	gap: 20px;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-}
 
-a {
+
+nav a {
 	text-decoration: none;
-	color: grey; 
+	color: #575757; 
 }
+
+/* End */
 
 button {
-	background-color: blue;
+	background-color: #1D4ED8;
 	color: white;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 12px;
+	border-style: none;
 }
+
+/* Header */
 
 header {
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./assets/banner.jpg");
-	height: 90vh;
+	height: 48vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 20% 20% 10%;
+	text-align: center;
+	padding: 10% 20% 10%;
 	color: white;
 }
 
-header button {
- 	margin-top: 60%;
+header>button {
+ 	margin-top: 30%;
 	font-size: 1.5rem;
 }
 
-.grid {
+header>h1 {
+	font-size: 4rem;
+}
+
+header>h1>span {
+	font-style: italic;
+}
+header>p {
+	font-size: 1.5rem;
+}
+
+/* End */
+
+/* main */
+/* Grid */
+main>h1 {
+	text-align: center;
+	padding-top: 40px;
+	font-size: 3rem;
+}
+
+#grid {
 	display: grid;
-	padding: 30px 8%;
+	padding: 0 8%;
+	padding-bottom: 100px;
 	grid-template-columns: repeat(2,1fr);
 	gap: 20px;
 }
 
-.pic {
-	border: 0.5px solid darkgrey;
+.card {
+	border: 2px solid #E5E7EB;
 	border-radius: 12px;
-	padding: 0 0 10px;
+	padding-bottom: 10px;
 }
 
-.pic img {
+.card img {
 	width: 100%;
+	height: auto;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
 
-.pic p {
-	padding: 10px;
+.card p {
+	line-height: 1.4;
+	padding-left: 10px;
 }
 
 .ptop {
 	font-size: 0.7rem;
 	color: blue;
 }
-
+.pmiddle {
+	font-weight: bold;
+}
 .pbottom {
 	font-size: 0.8rem;
-	color: grey;
+	color: #575757;
+}
+/* End Grid */
+/* Pricing */
+main>p {
+	color: #575757;
+	text-align: center;
 }
 
-main>h1 {
-	text-align: center;
-	padding-top: 40px;
+#pricebox {
+	display: grid;
+	gap:20px;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(3, 350px);
+	margin-top: 10px;
+}
+
+.price {
+	padding: 8px 8px 8px;
+	margin: 20px;
+	border: 2px solid black;
+	list-style-position: inside;
 }
