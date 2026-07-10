@@ -24,7 +24,7 @@ nav ul {
 
 
 
-nav a {
+a {
 	text-decoration: none;
 	color: #575757; 
 }
@@ -174,4 +174,17 @@ main>p {
 
 #_pro {
 	color: #ffffff6e;
+}
+
+footer {
+	background-color: #0D1B2A;
+	color: rgba(255, 255, 255, 0.425);
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 8%;
+}
+
+footer div {
+	display: flex;
+	gap: 10px;
 }
