@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	text-decoration: none;
 }
 
 hr {
@@ -24,9 +25,8 @@ nav ul {
 
 
 
-a {
-	text-decoration: none;
-	color: #0d1b2ace; 
+nav a {
+	color: #575757; 
 }
 
 /* End */
@@ -187,22 +187,26 @@ main>p {
 }
 /* Footer  */
 footer {
-	background-color: #5e707a;
+	background-color: #0D1B2A;
 	padding: 30px 8%;
 }
 footer>div {
-	color: rgb(0, 0, 0);
+	color: rgb(173, 173, 173);
 	display: flex;
 	justify-content: space-between;
 }
-footer>hr {
+/* footer>hr {
 	border: 1px solid black;
-}
+} */
 
 #fbottom div {
 	align-items: center;
 	display: flex;
 	gap: 10px;
+}
+
+footer a {
+	color: #E5E7EB;
 }
 
 #connect {
